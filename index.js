@@ -34,7 +34,7 @@ router.route('/sum')
       var y = parseFloat(req.query.y);
       var r = x + y;
 
-      res.json(r);
+      res.json({ risultato : r });
       res.status = 200;
 });
 
@@ -42,9 +42,10 @@ router.route('/multiply')
   .get(function (req, res){
     var x = parseFloat(req.query.x);
     var y = parseFloat(req.query.y);
+
     var r = x * y;
 
-    res.json(r);
+    res.json({ risultato : r });
     res.status = 200;
 
 });
