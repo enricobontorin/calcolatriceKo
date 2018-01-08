@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title> Calcolatrice </title>
+  <script type='text/javascript' src='knockout-3.4.2.js'></script>
+  <script src='http://ajax.aspnetcdn.com/ajax/jquery/jquery-1.9.0.js'></script>
+
+</head>
+
+
+<body>
+    <input type="number"  min="0" data-bind="value: itemValue" placeholder="0" />
+    <button data-bind='click: Somma'>Somma</button>
+    <button data-bind='click: Mult'>Moltiplica</button>
+    <span data-bind='text: itemValue1'>&nbsp;</span>
+    <button data-bind='click: Result'>Result</button>
+
+  <script src="/js/load_data.js"></script>
+</body>
+</html>
